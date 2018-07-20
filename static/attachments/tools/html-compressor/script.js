@@ -1,0 +1,1 @@
+(function(){var ta=document.getElementById('input_code'),bt=document.getElementById('button_code');function compress(){var v=ta.value;v=v.replace(/(>)?\s+/g,"$1 ");v=v.replace(/([\t\n\s\r]+)</g,"<");ta.value=v;ta.focus();ta.select()}bt.onclick=compress})();

@@ -1,0 +1,99 @@
+{{ define "script1" -}}
+<link href="{{ "assets/css/ayoshare.css" | absURL }}" rel="stylesheet">
+{{- end }}
+{{ define "script2" -}}
+<script id="dsq-count-scr" src="//{{ .Site.Params.DisqusShortname }}.disqus.com/count.js" async=""></script>
+<script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+<script src=" {{"assets/js/ayoshare.js" | absURL }}"></script>
+<script type="text/javascript">
+$(function() {
+	$('pre').addClass('prettyprint');
+	$("#ayoshare").ayoshare({
+		button: {
+			google : true,
+			facebook : true,
+			linkedin : true,
+			twitter : true,
+			email : true,
+			whatsapp : true,
+			telegram : true,
+			line : true,
+			bbm : true,
+			sms : true
+		}
+	});
+});
+</script>
+{{- end }}
+{{ define "main" -}}
+<div class="container">
+  <div class="row">
+		{{ partial "breadcrumb.html" . }}
+    <div class="col-sm-8 col-md-8" itemscope itemtype="http://schema.org/Blog">
+			<div class="post">
+				<div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+		      <meta itemprop="url" content="{{ .Params.images | absURL }}">
+		      <meta itemprop="width" content="800">
+		      <meta itemprop="height" content="800">
+		    </div>
+		    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+		      <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		        <meta itemprop="url" content="{{ .Site.Params.logo | absURL }}">
+		        <meta itemprop="width" content="600">
+		        <meta itemprop="height" content="600">
+		      </div>
+		      <meta itemprop="name" content="{{ .Site.Author.name }}">
+		    </div>
+				<meta itemprop="datePublished" content="{{ .PublishDate.Format $.Site.Params.ISO8601 }}"/>
+		    <meta itemprop="dateModified" content="{{ .Date.Format $.Site.Params.ISO8601 }}"/>
+        <div class="thumbnail blog-detail-thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+					{{- if .Params.images -}}
+					<img src="{{ .Params.images | absURL }}">
+		      {{- end -}}
+        </div>
+        <div class="content">
+					<h1 itemprop="headline">{{ .Title }}</h1>
+					<ul class="list-inline details">
+						<li><a><i class="material-icons">date_range</i>{{ .Date.Format "Mon Jan 2, 2006" }}</a></li>
+						<li itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="{{ .Site.Author.url }}"><i class="material-icons">person</i><span itemprop="name">{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Author.name }}{{ end }}</span></a></li>
+						<li><a><i class="material-icons">comment</i><span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}" data-disqus-identifier="{{ .UniqueID }}"></span></a></li>
+						<li class="dropdown pull-right">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Bagikan"><i class="material-icons">share</i></a>
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><div id="ayoshare" data-ayoshare="{{ .Permalink }}"></div></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="description">
+					{{ .Content }}
+					</div>
+					<div class="hashtags">
+						{{- if isset .Params "tags" }}
+						Tags&nbsp;:&nbsp;
+            {{- $tagsLen := len .Params.tags -}}
+            {{- if gt $tagsLen 0 -}}
+						{{- range $k, $v := .Params.tags -}}
+						{{- $url := printf "tags/%s" (. | urlize | lower) -}}
+						<a class="btn btn-white btn-tag btn-xs" href="{{ $url | absURL }}">{{ . }}</a>
+						{{- if lt $k (sub $tagsLen 1) }}&nbsp;{{ end -}}
+						{{- end -}}
+						{{- end }}
+						{{- end }}
+						<p>Anda bisa membantu saya dengan <a class="btn btn-white btn-tag btn-xs" href="//www.paypal.me/Threechilix310">Paypal</a> <!--atau dengan <a class="btn btn-white btn-tag btn-xs" href="//www.coowry.com/ThreeChilix">Pulsa</a>--></p>
+					</div>
+        </div>
+      </div>
+			{{ partial "page_post.html" . }}
+      <div class="post">
+				<div class="content">
+					{{ partial "disqus.html" . }}
+				</div>
+      </div>
+			{{ partial "article-ads.html" . }}
+    </div>
+    <div class="col-sm-4 col-md-4" itemscope itemtype="http://schema.org/WPSideBar">
+      {{ partial "sidebar.html" . }}
+    </div>
+  </div>
+</div>
+{{- end }}

@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+<center>
+<img width="{{.Get "width" }}" src="{{.Get "src" | absURL }}" alt="{{.Get "title" }}">
+</center>
+{{ else }}
+<center>
+<img width="{{.Get "width" }}" src="{{.Get 0}}" alt="{{.Get 0}}">
+</center>
+{{ end }}

@@ -1,0 +1,20 @@
+{{ if .Site.Params.Api.google -}}
+<div id="map" style="width:100%;height:500px"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.Api.google }}"></script>
+<script>
+function initialize() {
+  var myLatlng = new google.maps.LatLng(-7.26592, 110.50825);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    title: "Here we are!"
+  });
+  marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+{{- end }}

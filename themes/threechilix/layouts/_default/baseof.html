@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+{{ partial "head.html" . }}
+  {{ block "body" . -}}<body itemscope itemtype="http://schema.org/WebPage">{{- end }}
+    {{ partial "nav.html" . }}
+    {{ block "script1" . }}{{ end }}
+    {{ block "class" . -}}<div class="wrapper wall">{{- end }}
+    {{ block "main" . }}{{ end }}
+    {{ block "script2" . }}{{ end }}
+    {{ partial "footer.html" . }}
+    </div>
+    <div id="naek"><a href="#" class="btn btn-danger btn-fab btn-fab-mini btn-round"><i class="material-icons">keyboard_arrow_up</i></a></div>
+    {{ partial "script.html" . }}
+    {{ partial "cookie_consent" . }}
+  </body>
+</html>

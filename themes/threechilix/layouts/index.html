@@ -1,0 +1,28 @@
+{{ define "header" }}{{ end }}
+{{ define "body" }}<body class="index-page">{{ end }}
+{{ define "class" }}<div class="wrapper">{{ end }}
+{{ define "main" }}
+<div class="header header-filter" style="background-image: url('{{ .Site.Params.background | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="brand element"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ "assets/js/typed.js" | absURL }}"></script>
+<script type="text/javascript">
+$(function(){
+  var subtitles = [
+    "<h1>{{ i18n "hello" }}</h1> <h3>{{ i18n "pagemessage" }}</h3>"
+  ];
+  $(".element").typed({
+    strings: subtitles,
+    typeSpeed: 20,
+    backDelay: 500,
+    contentType: 'html'
+  });
+});
+</script>
+{{ end }}

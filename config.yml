@@ -1,0 +1,134 @@
+---
+# WebSite
+title: "ThreeChilix"
+# Hostname
+baseurl: "http://threechilix.xyz/"
+# Copyright
+copyright: "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+# Language
+DefaultContentLanguage: "id"
+# Roboot Txt
+enableRobotsTXT: true
+# RSS
+rssLimit: 6
+# Themes
+theme: "threechilix"
+# Pagination
+Paginate: 6
+paginatePath: "page"
+
+# Params
+Params:
+  name: "Three Chilix"
+  description: "Selalu menyukai kemajuan teknologi di segala bidang. Tertarik pada Photoshop, Editing Video, dan musik dangdut."
+  logo: "assets/imgs/logo.jpg"
+  images: "assets/imgs/image.jpg"
+  background: "assets/imgs/bg.jpg"
+  favicon: "assets/imgs/favicon.ico"
+  dateFormat: "2006-01-02"
+  ISO8601: "2006-01-02T15:04:05JST"
+  fb_admins: "100001830795584"
+  fb_profile_id: "1774673472843319"
+  google_site_verification: "64EWpEKzpdqOk9wRmwqAfg_XyWWkkzZweXFRkytn8To"
+  yandex_verification: "e466c8e5af110c60"
+  msvalidate: "A588E01DB45690B601AA25992FCBCA06"
+  gcse: "017237479760298959691:9nsuj9zuhbm"
+  google_adsense: "ca-pub-6505908592636981"
+  google_analytics: "UA-99554193-2"
+  disqusShortname: "threechilix"
+  rss: true
+  comments: true
+  cookie_consent: true
+  Widgets:
+    tag_cloud: true
+    recent_article: true
+    recent_gallery: true
+    youtube: false
+    google_adsense: false
+    authorbox: true
+  # Api Key
+  Api:
+    google: AIzaSyCOSQhjH1sVR3Qj2KGJkE0-nBEA3ylsI1c
+# Author
+Author:
+  name: "Threechilix"
+  email: triharnoto310@gmail.com
+  photo: "assets/imgs/logo.jpg"
+  cover: "assets/imgs/cover.jpg"
+  subtitle: "Belajar dan Berbagi"
+  description: "Selalu menyukai kemajuan teknologi di segala bidang. Tertarik pada Photoshop, Editing Video, dan musik dangdut."
+  website: "//threechilix.xyz"
+  url: "/about/"
+  email: "threechilix@gmail.com"
+  facebook: "threechilix"
+  twitter: "threechilix"
+  instagram: "threechilix"
+  googleplus: "threechilix"
+  youtube: "c/threechilix"
+  paypal: "Threechilix310"
+
+# Taxonomies
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+# Sitemap
+sitemap:
+  changefreq: "daily"
+  priority: 0.1
+  filename: "sitemap.xml"
+
+# Permalink
+permalinks:
+  blog: "/:section/:slug/"
+  page: "/:section/:title"
+  gallery: "/:section/:title"
+
+# Menu
+menu:
+# Navbar
+  main:
+    - name: "Blog"
+      pre: "<i class='material-icons'>dashboard</i>"
+      url: "blog/"
+      weight: 1
+    - name: "Gallery"
+      pre: "<i class='material-icons'>wallpaper</i>"
+      url: "/gallery/"
+      weight: 2
+    - name: "Tools"
+      pre: "<i class='material-icons'>settings</i>"
+      url: "/tools/"
+      weight: 3
+    - name: "Disqus"
+      pre: "<i class='material-icons'>question_answer</i>"
+      url: "/disqus/"
+      weight: 4
+  more:
+    - identifier: "more"
+      pre: "<i class='material-icons'>more_horiz</i>"
+      name: "More"
+      weight: 6
+    - parent: "more"
+      name: "Privacy Policy"
+      url: "page/privacy-policy/"
+      weight: 1
+    - parent: "more"
+      name: "Disclaimer"
+      url: "page/disclaimer/"
+      weight: 2
+  # Footer
+  bottom:
+    - name: "About"
+      url: "/about/"
+      weight: 1
+    - name: "Contact"
+      url: "/contact/"
+      weight: 2
+    - name: "Sitemap"
+      url: "/sitemap.xml"
+      weight: 3
+    - name: "Rss"
+      url: "index.xml"
+      weight: 4
+---

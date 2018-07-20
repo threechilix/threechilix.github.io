@@ -1,0 +1,37 @@
+{{- if .Site.Params.Widgets.recent_article }}
+<aside>
+  {{ if .IsPage -}}
+  <h3><i class='material-icons'>dashboard</i> Related Post</h3>
+  <div class="widget-content">
+  {{ range first 5 ( where ( where .Site.Pages.ByDate.Reverse ".Params.tags" "intersect" .Params.tags ) "Permalink" "!=" .Permalink ) }}
+  <div class="small-post">
+    <a href="{{ .Permalink }}">
+      {{- if .Params.images }}
+      <img src="{{ .Params.images | absURL }}" alt="{{ .Title }}">
+      {{- end }}
+    </a>
+    <a href="{{ .Permalink }}">
+      <p>{{ .Title }}</p>
+    </a>
+  </div>
+  {{- end }}
+  </div>
+  {{ else }}
+  <h3><i class='material-icons'>dashboard</i> Recent Post</h3>
+  <div class="widget-content">
+  {{ range first 5 (where .Site.RegularPages "Type" "blog") -}}
+  <div class="small-post">
+    <a href="{{ .Permalink }}">
+      {{- if .Params.images }}
+      <img src="{{ .Params.images | absURL }}" alt="{{ .Title }}">
+      {{- end }}
+    </a>
+    <a href="{{ .Permalink }}">
+      <p>{{ .Title }}</p>
+    </a>
+  </div>
+  {{- end }}
+  </div>
+  {{- end }}
+</aside>
+{{- end }}

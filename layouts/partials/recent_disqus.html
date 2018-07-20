@@ -1,0 +1,31 @@
+<div class="header burem" style="background-image: url('{{ "attachments/disqus/thumbnail.jpg" | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="brand element">
+          <h1>Disqus</h1>
+          <h3>Recent Comments</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-12">
+      <div class="content">
+        <script type="text/javascript" src="{{ "attachments/disqus/disqusin.js" | absURL }}"></script>
+        <div class="anu"></div>
+        <script>
+        $(document).ready(function(){
+          $(".anu").disqusin(
+            disqus_shortname = "threechilix",
+            username = "three_chilix",
+            limit = 8,
+            load_more = true,
+            api_key = "eZUhgX5TNgTLYLMKBJXgHa9mzuN5NVrvLiSPy3Z9ip4W4oosyD4B1faAhPJqxSxs"
+          );
+        });
+        </script>
+      </div>
+  </div>
+</div>

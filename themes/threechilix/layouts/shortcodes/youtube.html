@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+<iframe src="//www.youtube.com/embed/{{ .Get "id" }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{ else }}
+<iframe src="//www.youtube.com/embed/{{ .Get 0 }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+{{ end }}

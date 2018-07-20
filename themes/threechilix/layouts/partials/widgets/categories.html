@@ -1,0 +1,8 @@
+{{- if .Site.Params.widgets.categories }}
+<aside>
+    <h3>Categories</h3>
+            {{- range $name, $taxonomy := .Site.Taxonomies.categories}}
+                <a class="btn btn-white btn-tag btn-xs" href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>&nbsp;
+            {{- end }}
+</aside>
+{{- end }}

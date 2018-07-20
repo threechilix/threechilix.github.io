@@ -1,0 +1,38 @@
+<li class="col-md-6" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <div class="post">
+    <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ .Params.images | absURL }}">
+      <meta itemprop="width" content="800">
+      <meta itemprop="height" content="800">
+    </div>
+    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+      <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+        <meta itemprop="url" content="{{ .Site.Params.logo | absURL }}">
+        <meta itemprop="width" content="600">
+        <meta itemprop="height" content="600">
+      </div>
+      <meta itemprop="name" content="{{ .Site.Author.name }}">
+    </div>
+    <meta itemprop="datePublished" content="{{ .PublishDate.Format $.Site.Params.ISO8601 }}"/>
+    <meta itemprop="dateModified" content="{{ .Date.Format $.Site.Params.ISO8601 }}"/>
+    <a href="{{ .Permalink }}">
+      {{- if .Params.images }}
+      <img src="{{ .Params.images | absURL }}" alt="{{ .Title }}">
+      {{- end }}
+    </a>
+    <div class="content" id="{{ .UniqueID }}" itemprop="articleBody">
+      <h3 itemprop="headline"><a href="{{ .Permalink }}" itemprop="url mainEntityOfPage" title="{{ .Title }}">{{ .Title }}</a></h3>
+      {{- with .Params.tags }}
+      {{- range . }}
+      <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="btn btn-white btn-tag btn-xs">{{ . }}</a>&nbsp;
+      {{- end }}
+      {{- end }}
+      <div class="description">{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}</div>
+      <ul class="list-inline details">
+        <li><a><i class="material-icons">date_range</i>{{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}</a></li>
+        <li itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="{{ .Site.Author.url }}"><i class="material-icons">person</i><span itemprop='name'>{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Author.name }}{{ end }}</span></a></li>
+        <li class="pull-right"><a><i class="material-icons">comment</i><span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}" data-disqus-identifier="{{ .UniqueID }}"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</li>

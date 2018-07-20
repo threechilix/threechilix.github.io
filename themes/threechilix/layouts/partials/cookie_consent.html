@@ -1,0 +1,5 @@
+{{ if isset .Site.Params "cookie_consent" -}}
+<link rel="stylesheet" type="text/css" href="{{ "assets/css/cookieconsent.min.css" | absURL }}" />
+<script src="{{ "assets/js/cookieconsent.min.js" | absURL }}"></script>
+<script>window.addEventListener("load", function(){window.cookieconsent.initialise({"palette": {"popup": {"background": "#000"},"button": {"background": "#f1d600"}},"position": "bottom-right","content": {"href": {{"page/privacy-policy/" | absURL }}}})});</script>
+{{- end }}

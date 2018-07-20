@@ -1,0 +1,12 @@
+{{- if .Site.Params.Widgets.recent_gallery }}
+<aside>
+  <h3><i class="fa fa-film"></i> Recent Gallery</h3>
+  {{- range first 5 (where .Site.RegularPages "Type" "gallery") }}
+  <div class="small-post">
+    <a href="{{ .Permalink }}">
+      <p>{{ .Title }}</p>
+    </a>
+  </div>
+  {{- end }}
+</aside>
+{{- end }}

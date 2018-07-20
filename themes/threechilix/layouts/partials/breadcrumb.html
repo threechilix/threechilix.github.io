@@ -1,0 +1,30 @@
+<nav class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="{{ .URL | absURL }}">
+      <i class="material-icons">home</i>
+      <meta itemprop="name" content="Home" />
+    </a>
+    <meta itemprop="position" content="1" />
+  </li>
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="{{ lower .Section | urlize | absURL }}">
+      <span itemprop="name">{{ .Section | humanize | title }}</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </li>
+  {{ range .Params.categories }}
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="{{ "categories" | absURL }}/{{ . | urlize }}">
+      <span itemprop="name">{{ . | humanize | title }}</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </li>
+  {{ end }}
+  <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" class="active" href="{{ .Permalink }}">
+      <span itemprop="name">{{ .Title | humanize }}</span>
+    </a>
+    <meta itemprop="position" content="4" />
+  </li>
+</nav>

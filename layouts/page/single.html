@@ -1,0 +1,26 @@
+{{ define "body" }}<body class="profile-page" itemscope itemtype="http://schema.org/WebPage">{{ end }}
+{{ define "class" }}<div class="wrapper">{{ end }}
+{{ define "main" }}
+<!-- header -->
+<div class="header burem" style="background-image: url('{{ .Params.images | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="brand element">
+          <h1>{{ .Title }}</h1>
+          <h3>{{ if .Params.description }}{{ .Params.description }}{{ end }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-12">
+    <div class="post">
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

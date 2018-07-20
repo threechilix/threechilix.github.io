@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /page/
+Disallow: /search/
+Disallow: /contact/
+Disallow: /tools/
+Disallow: /about/
+
+Allow: /
+Sitemap: http://threechilix.xyz/sitemap.xml

@@ -1,0 +1,33 @@
+{{ define "script1" }}
+<script src="{{ "assets/masonry/modernizr.custom.js" | absURL }}"></script>
+<script src="{{ "assets/masonry/imagesloaded.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "assets/masonry/masonry.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "assets/masonry/cbpGridGallery.js" | absURL }}"></script>
+{{ end }}
+{{ define "script2" }}
+<script id="dsq-count-scr" src="//{{ .Site.Params.DisqusShortname }}.disqus.com/count.js" async=""></script>
+<script type="text/javascript">
+$(document).ready(function () {
+  new CBPGridGallery(document.getElementById('masonry'));
+});
+</script>
+{{ end }}
+{{ define "main" }}
+<div class="container">
+  <div class="col-sm-8 col-md-8">
+    <div class="row">
+      <div id="masonry" itemscope itemtype="http://schema.org/Blog">
+        <ul class="grid">
+          {{ range .Paginator.Pages }}
+          {{ .Render "summary"}}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    {{ partial "paginate.html" . }}
+  </div>
+  <div class="col-sm-4 col-md-4"  itemscope itemtype="http://schema.org/WPSideBar">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

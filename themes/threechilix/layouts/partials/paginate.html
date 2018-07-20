@@ -1,0 +1,25 @@
+{{ if gt .Paginator.TotalPages 1 -}}
+<nav>
+  <ul class='pagination pagination-danger' role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    {{ with .Paginator.First -}}
+    <li><a itemprop="url" class='page-link' href='{{ .URL }}'><span itemprop="name">{{ i18n "first" }}</span></a></li>
+    {{- end }}
+    {{ with .Paginator.Prev -}}
+    <li><a itemprop="url" class='page-link' href='{{ .URL }}'><span itemprop="name">{{ i18n "olderPosts" }}</span></a></li>
+    {{- end }}
+    {{- range .Paginator.Pagers -}}
+    {{ if eq . $.Paginator -}}
+    <li class="active"><a>{{ .PageNumber }}</a></li>
+    {{- else if or ( or ( eq . $.Paginator.First ) ( eq . $.Paginator.Prev ) ) ( or ( eq . $.Paginator.Next ) ( eq . $.Paginator.Last ) ) }}
+    <li><a itemprop="url" class='page-link' href='{{ .URL }}'><span itemprop="name">{{ .PageNumber }}</span></a></li>
+    {{- end }}
+    {{- end }}
+    {{ with .Paginator.Next -}}
+    <li><a itemprop="url" class='page-link' href='{{ .URL }}'><span itemprop="name">{{ i18n "next" }}</span></a></li>
+    {{- end }}
+    {{ with .Paginator.Last -}}
+    <li><a itemprop="url" class='page-link' href='{{ .URL }}'><span itemprop="name">{{ i18n "last" }}</span></a></li>
+    {{ end -}}
+  </ul>
+</nav>
+{{- end -}}

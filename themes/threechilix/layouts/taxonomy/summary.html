@@ -1,0 +1,23 @@
+<li class="col-md-6">
+  <div class="post">
+    <a href="{{ .Permalink }}">
+      {{- if .Params.images }}
+      <img src="{{ .Params.images | absURL }}" alt="{{ .Title }}">
+      {{- end }}
+    </a>
+    <div class="content">
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      {{- with .Params.tags }}
+      {{- range . }}
+      <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="btn btn-white btn-tag btn-xs">{{ . }}</a>&nbsp;
+      {{- end }}
+      {{- end }}
+      <div class="description">{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}</div>
+      <ul class="list-inline details">
+        <li><a><i class="material-icons">date_range</i>{{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}</a></li>
+        <li><a href="{{ .Site.Author.url }}"><i class="material-icons">person</i>{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Author.name }}{{ end }}</a></li>
+        <li class="pull-right"><a><i class="material-icons">comment</i><span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}" data-disqus-identifier="{{ .UniqueID }}"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</li>

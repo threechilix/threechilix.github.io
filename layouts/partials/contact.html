@@ -1,0 +1,80 @@
+{{ partial "maps.html" . }}
+<div class="post">
+  <div class="content">
+    <div class="container">
+      <h2 class="text-center">{{ i18n "contact"}}</h2>
+      <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){);}" style="display: none;"></iframe>
+      <form action="https://docs.google.com/forms/d/1SRi11ZUlRWuxK5Mm6FsgyvJO71ANrm6TiJypywBKDr4/formResponse" id="ss-form" method="POST" onsubmit="fadeEffect.init('res', 1);document.getElementById('res').style.display = 'block'" target="hidden_iframe">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group label-floating">
+              <label class="control-label">{{ i18n "name"}}</label>
+              <input type="text" name="entry.1326162786" id="entry.1326162786" class="form-control" required="required">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group label-floating">
+              <label class="control-label">{{ i18n "email"}}</label>
+              <input type="email" name="entry.1341523795" id="entry.1341523795" class="form-control" required="required">
+            </div>
+          </div>
+        </div>
+        <div class="form-group label-floating">
+          <label class="control-label">{{ i18n "messenge"}}</label>
+          <textarea class="form-control" name="entry.815932113" id="entry.815932113" rows="4" required="required"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <input name="draftResponse" type="hidden" value="[,,&quot;-2045212684255975660&quot;]">
+            <input name="pageHistory" type="hidden" value="0">
+            <input name="fbzx" type="hidden" value="-2045212684255975660">
+            <input class="btn btn-primary btn-raised" type="submit" name="submit" value="{{ i18n "send"}}">
+            <div id="res"  style="display:none;">
+              <div class="container-fluid">
+                <div class="alert alert-success">
+                  <div class="alert-icon">
+                    <i class="material-icons">check</i>
+                  </div>
+                   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                     <a href="javascript:void(0)" onclick="document.getElementById('res').style.display = 'none' ;myFunction()" title="Close">
+                       <span aria-hidden="true"><i class="material-icons">clear</i></span>
+                     </a>
+                   </button>
+                   <b>Great!</b> We have got your details and someone will be in touch.
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+var submitted=false;
+var fadeEffect=function(){
+ return{
+  init:function(id, flag, target){
+   this.elem = document.getElementById(id);
+   clearInterval(this.elem.si);
+   this.target = target ? target : flag ? 100 : 0;
+   this.flag = flag || -1;
+   this.alpha = this.elem.style.opacity ? parseFloat(this.elem.style.opacity) * 100 : 0;
+   this.elem.si = setInterval(function(){fadeEffect.tween()}, 20);
+  },
+  tween:function(){
+   if(this.alpha == this.target){
+    clearInterval(this.elem.si);
+   }else{
+    var value = Math.round(this.alpha + ((this.target - this.alpha) * .05)) + (1 * this.flag);
+    this.elem.style.opacity = value / 100;
+    this.elem.style.filter = 'alpha(opacity=' + value + ')';
+    this.alpha = value
+   }
+  }
+ }
+}();
+function myFunction() {
+    location.reload();
+}
+</script>

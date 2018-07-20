@@ -1,0 +1,30 @@
+{{ define "class" }}<div class="wrapper">{{ end }}
+{{ define "main" }}
+<div class="post">
+	<div class="content">
+		<div class="container tools">
+			<div class="col-md-12">
+				<div class="row">
+					{{ range .Data.Pages }}
+					<div class="col-md-4">
+						<div class="info">
+							<div class="icon {{ if .Params.class }}{{ .Params.class }}{{ else }}icon-grey{{ end }}">
+								<i class="fa {{ if .Params.icon }}{{ .Params.icon }}{{ end }}"></i>
+							</div>
+							<h4 class="info-title">
+								{{ if .Params.link }}
+								<a href="https://rawgit.com/threechilix/{{ .Params.link }}" target="_blank">{{ .Title }}</a>
+								{{ else }}
+								<a href="{{ .Permalink }}">{{ .Title }}</a>
+								{{ end }}
+							</h4>
+							<p>{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Summary }}{{ end }}</p>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{ end }}

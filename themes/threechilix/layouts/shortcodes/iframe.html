@@ -1,0 +1,9 @@
+{{ if .IsNamedParams }}
+<center>
+<iframe src="{{.Get "src" }}" alt="{{.Get "title" }}"></iframe>
+</center>
+{{ else }}
+<center>
+<iframe src="{{.Get 0}}" alt="{{.Get 0}}"></iframe>
+</center>
+{{ end }}

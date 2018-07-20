@@ -1,0 +1,17 @@
+{{- if .Site.Params.Widgets.recent_article }}
+<aside>
+  <h3><i class='material-icons'>dashboard</i> Recent</h3>
+  {{- range first 5 (where .Site.RegularPages "Type" "blog") }}
+  <div class="small-post">
+    <a href="{{ .Permalink }}">
+      {{- if .Params.images }}
+      <img src="{{ .Params.images | absURL }}" alt="{{ .Title }}">
+      {{- end }}
+    </a>
+    <a href="{{ .Permalink }}">
+      <p>{{ .Title }}</p>
+    </a>
+  </div>
+  {{- end }}
+</aside>
+{{- end }}

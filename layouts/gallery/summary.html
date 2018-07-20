@@ -1,0 +1,32 @@
+<div class="col-md-4 col-sm-6">
+  <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <meta itemprop="url" content="{{ .Params.images | absURL }}">
+    <meta itemprop="width" content="800">
+    <meta itemprop="height" content="800">
+  </div>
+  <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ .Site.Params.logo | absURL }}">
+      <meta itemprop="width" content="600">
+      <meta itemprop="height" content="600">
+    </div>
+    <meta itemprop="name" content="{{ .Site.Author.name }}">
+  </div>
+  <meta itemprop="datePublished" content="{{ .PublishDate.Format $.Site.Params.ISO8601 }}"/>
+  <meta itemprop="dateModified" content="{{ .Date.Format $.Site.Params.ISO8601 }}"/>
+  <a class="work branding {{ if .Params.class }}{{ .Params.class }}{{ end }}" href="{{ .Permalink }}">
+    <figure>
+      <div class="papan" style="background:url('{{ .Params.images | absURL }}') 50% 100%"></div>
+      <figcaption>
+        <h3>{{ .Title }}</h3>
+        <div class="divider"></div>
+        <p>{{ if .Params.subtitle }}{{ .Params.subtitle }}{{ end }}</p>
+        <div class="button">
+          <i class="fa fa-calendar"></i>{{ default (i18n "dateFormat") .Site.Params.dateformat | .Date.Format }}
+          <i class="material-icons">person</i>{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Author.name }}{{ end }}
+          <span class="pull-right"><i class="material-icons">comment</i><span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}" data-disqus-identifier="{{ .UniqueID }}"></span></span>
+        </div>
+      </figcaption>
+    </figure>
+  </a>
+</div>

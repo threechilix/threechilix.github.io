@@ -1,0 +1,94 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}" />
+  <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}" />
+  {{ .Hugo.Generator }}
+  {{- with .Params.description | default .Site.Params.description | default .Summary }}
+  <meta name="description" content="{{ . }}">
+  <meta property="og:description" content="{{ . }}">
+  <meta name="twitter:description" content="{{ . }}">
+  {{- end }}
+  <meta itemprop="keywords" content="{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}" />
+  <meta name="author" content="{{ .Site.Author.name }}"/>
+  {{- with .Site.Params.favicon }}
+  <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+  {{- end }}
+  <meta property="og:updated_time" content="{{ .Date }}"/>
+  {{- with .Params.audio }}
+  <meta property="og:audio" content="//w.soundcloud.com/player/?url={{ . }}" />
+  <meta name="twitter:audio" content="//w.soundcloud.com/player/?url={{ . }}" />
+  {{- end }}
+  {{- with .Params.video }}
+  <meta property="og:video" content="//www.youtube.com/embed/{{ . }}" />
+  <meta name="twitter:video" content="//www.youtube.com/embed/{{ . }}" />
+  {{- end }}
+  {{- with .Params.images }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  {{- end }}
+  <meta name="twitter:card" content="summary" />
+  {{- with .Site.Author.twitter }}
+  <meta name="twitter:site" content="@{{ . }}" />
+  <meta name="twitter:creator" content="@{{ . }}" />
+  {{- end }}
+  {{- with .Site.Params.fb_admins }}
+  <meta property="fb:admins" content="{{ . }}">
+  {{- end }}
+  {{- with .Site.Params.fb_profile_id }}
+  <meta property="fb:profile_id" content="{{ . }}">
+  {{- end }}
+  {{- if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
+  {{- with .Site.Params.google_site_verification }}
+  <meta name="google-site-verification" content="{{ . }}" />
+  {{- end }}
+  {{- with .Site.Params.yandex_verification }}
+  <meta name='yandex-verification' content='{{ . }}' />
+  {{- end }}
+  {{- with .Site.Params.msvalidate }}
+  <meta name="msvalidate.01" content="{{ . }}" />
+  {{- end }}
+  {{- end }}
+  <meta property="og:url" content="{{ .URL | absURL }}" />
+  <meta property="og:type" content="{{ if .Params.type }}{{ .Params.type }}{{ else }}website{{ end }}" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  {{- if .RSSLink }}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+  {{- end }}
+  <link rel="canonical" href="{{ .URL | absURL }}" />
+  {{- if .IsHome }}
+  <script type='application/ld+json'>
+  {"@context":"http:\/\/schema.org","@type":"WebSite","url":"{{ .Site.BaseURL }}","potentialAction":{"@type":"SearchAction","target":"{{ "search" | absURL }}?&q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+  {{- end }}
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="{{ "assets/css/bootstrap.min.css" | absURL }}">
+  <link rel="stylesheet" type="text/css" href="{{ "assets/css/material-kit.css" | absURL }}">
+  <link href="{{ "templatecss/custom.css" | absURL }}" rel="stylesheet">
+  <link href="{{ "cssloader/theme.css" | absURL }}" rel="stylesheet">
+  <script src="{{ "assets/js/jquery.min.js" | absURL }}"></script>
+  {{ "<!--[if lt IE 9]>" | safeHTML }}
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  {{ "<![endif]-->" | safeHTML }}
+  {{- if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
+  {{- with .Site.Params.google_adsense }}
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "{{ . }}",
+    enable_page_level_ads: true
+  });
+  </script>
+  <script>
+  $(document).ready(function(){
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  });
+  </script>
+  {{- end }}
+  {{- end }}
+</head>

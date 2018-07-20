@@ -1,0 +1,17 @@
+<footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	<div class="container">
+		<nav class="menu-bottom pull-left">
+			<ul>
+				{{- range .Site.Menus.bottom.ByWeight }}
+				<li><a title="{{ .Name }}" href="{{ .URL  | absURL }}">{{ .Name }}</a></li>
+				{{- end }}
+			</ul>
+		</nav>
+		<div class="copyright pull-right">
+			<p>&copy; <span itemprop="copyrightYear">{{- .Site.LastChange.Format "2006" }}</span>
+				<span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Site.Author.name }}</span></span>
+				| Theme by <a href="https://github.com/creativetimofficial/material-kit" target="_BLANK">Material Kit</a>
+			</p>
+		</div>
+	</div>
+</footer>

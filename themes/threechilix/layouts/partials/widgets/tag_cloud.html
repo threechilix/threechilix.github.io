@@ -1,0 +1,8 @@
+{{- if .Site.Params.Widgets.recent_article }}
+<aside>
+  <h3><i class="fa fa-hashtag"></i> Tags</h3>
+  {{- range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <a href="{{ "tags" | absURL }}{{ $name | urlize }}" class="btn btn-white btn-tag btn-xs">{{ $name }}</a>&nbsp;
+  {{- end }}
+</aside>
+{{- end }}

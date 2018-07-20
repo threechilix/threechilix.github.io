@@ -1,0 +1,31 @@
+<div class="header header-filter" style="background-image: url('{{ .Site.Author.cover | absURL }}');background-position: center;"></div>
+<div class="main main-raised">
+  <div class="profile-content">
+    <div class="container">
+      <div class="row">
+        <div class="profile">
+          <div class="avatar">
+            <img src="{{ .Site.Params.logo | absURL }}" alt="Circle Image" class="img-circle img-responsive img-raised">
+          </div>
+          <div class="name">
+            <h3 class="title">{{ .Site.Author.name }}</h3>
+            <h6>{{ .Site.Author.subtitle }}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="description text-center">
+        <p>{{ .Site.Author.description }}</p>
+      </div>
+      <div class="row findme-area text-center">
+        <p><h3>Find Me</h3>
+        <span itemscope itemtype="http://schema.org/Person">
+          {{ range .Site.Data.threechilix.social.social_icons }}
+          {{- if isset $.Site.Author .id }}
+          <a href="{{ printf .url (index $.Site.Author .id) }}" itemprop="sameAs" target="_BLANK" class="btn btn-{{ .id }}" title="{{ .title }}"><i class="fa {{ .icon }}"></i></a>
+          {{- end }}
+          {{ end }}
+        </span></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+name = "Three Chilix"
+license = "MIT"
+description = "Keep calm and love programming."
+tags = ["blog", "portfolio", "projects", "Gallery", "responsive"]
+features = ["blog", "themes", "disqus", "responsive"]
+min_version = 0.26
+
+[author]
+    name = "threechilix"
+    homepage = "https://threechilix.github.io"
+
+# If Porting existing theme
+[original]
+    author =  "Creative Tim"
+    homepage = "https://www.creative-tim.com/product/material-kit"
+    repo = "https://github.com/creativetimofficial/material-kit"

@@ -1,0 +1,23 @@
+{{- if .Site.Params.widgets.authorbox }}
+<aside>
+<div class="authorbox" itemscope itemtype="http://schema.org/Organization">
+ <h2 class="author-title">Author</h2>
+ <img alt="author" itemprop="logo" src="{{ "assets/imgs/logo.jpg" | absURL }}" width="120" height="120" />
+ {{- with .Site.Author }}
+ <a class="authorname" href="https://plus.google.com/+{{ .googleplus }}" rel="author" target="_blank" title="{{ .name }}"><span itemprop="name">{{ .name }}</span></a>
+ <a class="authorname-url" href="https://plus.google.com/+{{ .googleplus }}" rel="author" target="_blank" title="google.com/+{{ .name }}">google.com/+{{ .googleplus }}</a>
+ <div class="sosmed-author">
+   <ul>
+    <link itemprop="url" href="{{ "/" | absURL }}">
+    <li><a href="https://www.facebook.com/{{ .facebook }}" itemprop="sameAs" target="_blank" title="Facebook" rel="nofollow"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+    <li><a href="https://twitter.com/{{ .twitter }}" itemprop="sameAs" target="_blank" title="Twitter" rel="nofollow"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.google.com/+{{ .googleplus }}" itemprop="sameAs" target="_blank" title="Google+" rel="nofollow"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a></li>
+    <li><a href="//www.youtube.com/{{ .youtube }}" itemprop="sameAs" target="_blank" title="Youtube" rel="nofollow"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a></li>
+    <li><a href="https://www.instagram.com/{{ .instagram }}" itemprop="sameAs" target="_blank" title="Instagram" rel="nofollow"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+   </ul>
+   <a class="button-author" href="https://xyz.us16.list-manage.com/subscribe?u=7ae5daa75b18d5bd6796757e2&id=2c8c38d948" rel="nofollow" target="_blank" title="Subscribe This Blog">Subscribe This Blog <i aria-hidden="true" class="fa fa-paper-plane"></i></a>
+ </div>
+ {{- end }}
+</div>
+</aside>
+{{- end }}

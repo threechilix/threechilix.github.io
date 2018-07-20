@@ -1,0 +1,37 @@
+{{ define "script1" }}
+<script src="{{ "assets/masonry/modernizr.custom.js" | absURL }}"></script>
+<script src="{{ "assets/masonry/imagesloaded.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "assets/masonry/masonry.pkgd.min.js" | absURL }}"></script>
+<script src="{{ "assets/masonry/cbpGridGallery.js" | absURL }}"></script>
+{{ end }}
+{{ define "script2" }}
+<script type="text/javascript" charset="utf-8">
+var disqus_shortname = '{{ if .Site.DisqusShortname }}{{ .Site.DisqusShortname }}{{ end }}';
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+$(document).ready(function () {
+  new CBPGridGallery(document.getElementById('masonry'));
+});
+</script>
+{{ end }}
+{{ define "main" }}
+<div class="container">
+  <div class="col-sm-8 col-md-8">
+    <div class="row">
+      <div id="masonry">
+        <ul class="grid">
+          {{ range .Paginator.Pages }}
+          {{ .Render "summary"}}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+    {{ partial "paginate.html" . }}
+  </div>
+  <div class="col-sm-4 col-md-4">
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+{{ end }}
