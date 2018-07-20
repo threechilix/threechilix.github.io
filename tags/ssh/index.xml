@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ssh on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/ssh/</link>
+    <description>Recent content in Ssh on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 31 Aug 2017 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Menggunakan SSH di Github</title>
+      <link>http://threechilix.xyz/blog/cara-menggunakan-ssh-di-github/</link>
+      <pubDate>Thu, 31 Aug 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/cara-menggunakan-ssh-di-github/</guid>
+      <description>Setiap kali melakukan push ke repository github kita harus login (memasukan username dan password dulu) hal ini sering membuat kita merasa agat terlalu ribet, kita dapat menghindari hal itu dengan mengunakan SSH yang disediakan oleh Github. Untuk membuat SSH kita harus melakukan :  Buka Git Bash atau Command Prompt Jalankan perintah dibawah ini pada prompt, untuk melihat apakah Anda sudah memiliki Key SSH 
+ls -al ~/.ssh   Periksa daftar direktori untuk mengetahui apakah Anda sudah memiliki Key SSH.</description>
+    </item>
+  </channel>
+</rss>

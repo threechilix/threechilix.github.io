@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Themes on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/themes/</link>
+    <description>Recent content in Themes on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 18 Sep 2017 16:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membuat Tema Baru di Hugo</title>
+      <link>http://threechilix.xyz/blog/membuat-tema-baru-di-hugo/</link>
+      <pubDate>Mon, 18 Sep 2017 16:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/membuat-tema-baru-di-hugo/</guid>
+      <description>Walaupun Hugo sudah menyediakan themes untuk Anda gunakan tapi tidak ada salahnya kita belejar membuat tema dari nol.
+Untuk membuat tema dari nol kita dapat mengunakan perintah
+hugo new theme [name]  sebagai contoh Saya membuat tema dengan nama tes
+hugo new theme tes  Maka akan ada direktori baru di dalam direktori themes dengan nama folder tes Hugo sudah membuatkankan kita struktur direktori temanya dan tinggal dimodifikasi saja.</description>
+    </item>
+  </channel>
+</rss>

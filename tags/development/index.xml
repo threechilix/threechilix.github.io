@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/development/</link>
+    <description>Recent content in Development on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 29 Aug 2017 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Hugo Di Windows</title>
+      <link>http://threechilix.xyz/blog/install-hugo-di-windows/</link>
+      <pubDate>Tue, 29 Aug 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/install-hugo-di-windows/</guid>
+      <description>Hugo adalah static generator tercepat di dunia yang mempu membuat ribuan postingan hanya dengan hitungan detik. Install Hugo Di Windows Cara install hugo itu mudah dan tidak membutuhkan software pihak ke-3 lainnya seperti (Node.js). Anda hanya perlu memasangnya dengan cara mendownload hugo versi terbaru disini lalu ekstraks hasil download pada folder C:\Hugo\bin dan rubah nama menjadi hugo.exe jika bawaannya sudah hugo.exe maka tidak perlu ada perubahan lagi.
+Setelah proses ekstraksi selesai, selanjutnya Anda perlu mengatur Envirnoment Variables dan menambahkan ;C:\Hugo\bin caranya</description>
+    </item>
+  </channel>
+</rss>

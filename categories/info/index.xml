@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Info on ThreeChilix</title>
+    <link>http://threechilix.xyz/categories/info/</link>
+    <description>Recent content in Info on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 14 Nov 2017 06:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/categories/info/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software download video &amp; subtitle Youtube</title>
+      <link>http://threechilix.xyz/blog/software-download-video--subtitle-youtube/</link>
+      <pubDate>Tue, 14 Nov 2017 06:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/software-download-video--subtitle-youtube/</guid>
+      <description>4K Video Downloader adalah software freeware (gratis) yang berguna untuk mendownload video youtube sekaligus subtitle nya. Penggunaan software ini pun cukup mudah. Beberapa kelebihan dan fitur unggulan 4K video downloader antara lain:  Download entire playlists and channels from YouTube and save them in MP4, MKV, M4A, MP3, FLV, 3G, generate .m3u file for playlists. Download video in HD 1080p, HD 720p or 4K quality and enjoy high dimension video on your HD TV, iPad or other devices.</description>
+    </item><item>
+      <title>Melaporkan Dan Blokir Konten Tidak Pantas Di Google&#43;</title>
+      <link>http://threechilix.xyz/blog/melaporkan-dan-blokir-konten-tidak-pantas-di-google-/</link>
+      <pubDate>Sat, 11 Nov 2017 06:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/melaporkan-dan-blokir-konten-tidak-pantas-di-google-/</guid>
+      <description>Sepertinya Google+ belum bisa memfilter sendiri konten-konten yang tidak pantas. Untuk itu user perlu melaporkan jika ada konten di Google+ yang dianggap tidak pantas. Seperti kita ketahui, spammer bisa ada di mana saja, tidak terkecuali di Google+. Banyak sekali user yang tidak bertanggung jawab yang menyebarkan konten-konten tidak pantas di Google+. Jika Anda merasa tidak nyaman berada di beranda Google+ Anda karena konten-konten tidak pantas tersebut, Anda bisa melaporkan dan memblokir konten tersebut.</description>
+    </item><item>
+      <title>Bootstrap 4 dan Fitur Terbarunya</title>
+      <link>http://threechilix.xyz/blog/bootstrap-4-dan-fitur-terbarunya/</link>
+      <pubDate>Sat, 04 Nov 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/bootstrap-4-dan-fitur-terbarunya/</guid>
+      <description>Baru-baru ini Framework cukup terkenal yakni Bootstrap telah merilis versi terbarunya yaitu Bootstrap 4, hal ini bertepatan dengan 4 tahun nya Bootstrap berdiri. Tentu bagi kita yang sudah mengunakan Bootstrap bertanya-tanya apa saja fitur terbarunya itu ? Bootstrap versi terbaru ini ada banyak perubahan yang cukup besar dan tentunya dengan fitur terbarunya, dan tentu hal ini untuk memudahkan kita dalam membuat baris program.  Berikut adalah Bootstrap versi 4 dan rilis terbarunya:  Dokumentasi menjadi lebih baik Pada versi terbarunya ini Bootstrap telah menulis ulang semua dokumentasi dan telah menambahkan plugin.</description>
+    </item><item>
+      <title>Apa Itu Hugo?</title>
+      <link>http://threechilix.xyz/blog/apa-itu-hugo/</link>
+      <pubDate>Mon, 28 Aug 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/apa-itu-hugo/</guid>
+      <description>Hugo adalah sebuah framework situs web. Secara teknis, Hugo adalah generator situs statis. Tidak seperti cms lain yang di program untuk menjalankan situs secara dinamis, Hugo dioptimalkan untuk membuat situs web yang memberikan pengalaman menulis yang hebat.
+Itulah pengertian hugo yang saya kutip dari situs web resmi-nya, Jadi intinya hugo merupakan sebuah CMS sama seperti wordpress akan tetapi hugo sedikit berbeda di hugo tidak memerlukan database karena postingan atau konten yang dibuat berbentuk file markdown dan yang lebih istimewa nya lagi hugo bisa memakai layanan gratis dari Github Pages, Gitlab dan Bitbucket</description>
+    </item>
+  </channel>
+</rss>

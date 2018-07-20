@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maps on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/maps/</link>
+    <description>Recent content in Maps on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 21 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/maps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membuat Lokasi Di Google Maps</title>
+      <link>http://threechilix.xyz/blog/membuat-lokasi-di-google-maps/</link>
+      <pubDate>Thu, 21 Sep 2017 00:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/membuat-lokasi-di-google-maps/</guid>
+      <description>Membuat lokasi di Google Maps dapat berguna saat Anda membuat web untuk hotel, perumahan, ataupun toko online agar pengunjung dapat mengetahui lokasi Anda dengan tepat, dengan begitu akan memberikan kepercayaan tersendiri terhadap layanan online yang Anda bangun. Karena jika tidak ada kepercayaan, maka usaha online yang Anda bangun akan sia-sia saja.
+Nah kali ini saya akan share cara membuat Google Maps dengan menentukan lokasi kita sendiri dan menambahkan link web kita pada lokasi yang kita buat.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/css/</link>
+    <description>Recent content in Css on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sat, 04 Nov 2017 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bootstrap 4 dan Fitur Terbarunya</title>
+      <link>http://threechilix.xyz/blog/bootstrap-4-dan-fitur-terbarunya/</link>
+      <pubDate>Sat, 04 Nov 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/bootstrap-4-dan-fitur-terbarunya/</guid>
+      <description>Baru-baru ini Framework cukup terkenal yakni Bootstrap telah merilis versi terbarunya yaitu Bootstrap 4, hal ini bertepatan dengan 4 tahun nya Bootstrap berdiri. Tentu bagi kita yang sudah mengunakan Bootstrap bertanya-tanya apa saja fitur terbarunya itu ? Bootstrap versi terbaru ini ada banyak perubahan yang cukup besar dan tentunya dengan fitur terbarunya, dan tentu hal ini untuk memudahkan kita dalam membuat baris program.  Berikut adalah Bootstrap versi 4 dan rilis terbarunya:  Dokumentasi menjadi lebih baik Pada versi terbarunya ini Bootstrap telah menulis ulang semua dokumentasi dan telah menambahkan plugin.</description>
+    </item>
+  </channel>
+</rss>

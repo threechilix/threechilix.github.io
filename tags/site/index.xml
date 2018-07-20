@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Site on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/site/</link>
+    <description>Recent content in Site on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 07 Nov 2017 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/site/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mailto: Link Solusi Untuk Yang Kesulitan Membuat Contact Form</title>
+      <link>http://threechilix.xyz/blog/mailto-link-solusi-untuk-yang-kesulitan-membuat-contact-form/</link>
+      <pubDate>Tue, 07 Nov 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/mailto-link-solusi-untuk-yang-kesulitan-membuat-contact-form/</guid>
+      <description>Hugo adalah static website generator untuk blog, dokumen, dan portofolio. Karena dibangun di Go Programming Language, hal ini yang membuat situs statis yang menggunakan Hugo dapat diakses lebih cepat. Selain itu Ada banyak pilihan hosting yang dapat Anda pilih dari Amazon S3, Cloudfront, Heroku, Github Pages, Dropbox. Kelemahan dari situs statis ini, adalah bahwa tidak mendukung Contact form. Sehingga kita harus membuat sendiri Contact form. membuat contact form masih merupakan pekerjaan yang sulit bagi sebagian orang.</description>
+    </item><item>
+      <title>Bootstrap 4 dan Fitur Terbarunya</title>
+      <link>http://threechilix.xyz/blog/bootstrap-4-dan-fitur-terbarunya/</link>
+      <pubDate>Sat, 04 Nov 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/bootstrap-4-dan-fitur-terbarunya/</guid>
+      <description>Baru-baru ini Framework cukup terkenal yakni Bootstrap telah merilis versi terbarunya yaitu Bootstrap 4, hal ini bertepatan dengan 4 tahun nya Bootstrap berdiri. Tentu bagi kita yang sudah mengunakan Bootstrap bertanya-tanya apa saja fitur terbarunya itu ? Bootstrap versi terbaru ini ada banyak perubahan yang cukup besar dan tentunya dengan fitur terbarunya, dan tentu hal ini untuk memudahkan kita dalam membuat baris program.  Berikut adalah Bootstrap versi 4 dan rilis terbarunya:  Dokumentasi menjadi lebih baik Pada versi terbarunya ini Bootstrap telah menulis ulang semua dokumentasi dan telah menambahkan plugin.</description>
+    </item><item>
+      <title>Apa Itu Hugo?</title>
+      <link>http://threechilix.xyz/blog/apa-itu-hugo/</link>
+      <pubDate>Mon, 28 Aug 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/apa-itu-hugo/</guid>
+      <description>Hugo adalah sebuah framework situs web. Secara teknis, Hugo adalah generator situs statis. Tidak seperti cms lain yang di program untuk menjalankan situs secara dinamis, Hugo dioptimalkan untuk membuat situs web yang memberikan pengalaman menulis yang hebat.
+Itulah pengertian hugo yang saya kutip dari situs web resmi-nya, Jadi intinya hugo merupakan sebuah CMS sama seperti wordpress akan tetapi hugo sedikit berbeda di hugo tidak memerlukan database karena postingan atau konten yang dibuat berbentuk file markdown dan yang lebih istimewa nya lagi hugo bisa memakai layanan gratis dari Github Pages, Gitlab dan Bitbucket</description>
+    </item>
+  </channel>
+</rss>

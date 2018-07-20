@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/video/</link>
+    <description>Recent content in Video on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 14 Nov 2017 06:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software download video &amp; subtitle Youtube</title>
+      <link>http://threechilix.xyz/blog/software-download-video--subtitle-youtube/</link>
+      <pubDate>Tue, 14 Nov 2017 06:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/software-download-video--subtitle-youtube/</guid>
+      <description>4K Video Downloader adalah software freeware (gratis) yang berguna untuk mendownload video youtube sekaligus subtitle nya. Penggunaan software ini pun cukup mudah. Beberapa kelebihan dan fitur unggulan 4K video downloader antara lain:  Download entire playlists and channels from YouTube and save them in MP4, MKV, M4A, MP3, FLV, 3G, generate .m3u file for playlists. Download video in HD 1080p, HD 720p or 4K quality and enjoy high dimension video on your HD TV, iPad or other devices.</description>
+    </item>
+  </channel>
+</rss>
