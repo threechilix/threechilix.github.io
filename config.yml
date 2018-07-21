@@ -44,7 +44,7 @@ Params:
     recent_article: true
     recent_gallery: true
     youtube: false
-    google_adsense: false
+    google_adsense: true
     authorbox: true
   # Api Key
   Api:
