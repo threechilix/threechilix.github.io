@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on ThreeChilix</title>
+    <link>http://threechilix.xyz/tags/hugo/</link>
+    <description>Recent content in Hugo on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 07 Nov 2017 08:00:00 +0000</lastBuildDate>
+    <atom:link href="http://threechilix.xyz/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mailto: Link Solusi Untuk Yang Kesulitan Membuat Contact Form</title>
+      <link>http://threechilix.xyz/blog/mailto-link-solusi-untuk-yang-kesulitan-membuat-contact-form/</link>
+      <pubDate>Tue, 07 Nov 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/mailto-link-solusi-untuk-yang-kesulitan-membuat-contact-form/</guid>
+      <description>Hugo adalah static website generator untuk blog, dokumen, dan portofolio. Karena dibangun di Go Programming Language, hal ini yang membuat situs statis yang menggunakan Hugo dapat diakses lebih cepat. Selain itu Ada banyak pilihan hosting yang dapat Anda pilih dari Amazon S3, Cloudfront, Heroku, Github Pages, Dropbox. Kelemahan dari situs statis ini, adalah bahwa tidak mendukung Contact form. Sehingga kita harus membuat sendiri Contact form. membuat contact form masih merupakan pekerjaan yang sulit bagi sebagian orang.</description>
+    </item><item>
+      <title>Membuat Tema Baru di Hugo</title>
+      <link>http://threechilix.xyz/blog/membuat-tema-baru-di-hugo/</link>
+      <pubDate>Mon, 18 Sep 2017 16:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/membuat-tema-baru-di-hugo/</guid>
+      <description>Walaupun Hugo sudah menyediakan themes untuk Anda gunakan tapi tidak ada salahnya kita belejar membuat tema dari nol.
+Untuk membuat tema dari nol kita dapat mengunakan perintah
+hugo new theme [name]  sebagai contoh Saya membuat tema dengan nama tes
+hugo new theme tes  Maka akan ada direktori baru di dalam direktori themes dengan nama folder tes Hugo sudah membuatkankan kita struktur direktori temanya dan tinggal dimodifikasi saja.</description>
+    </item><item>
+      <title>Memasang Komentar Disqus pada Hugo</title>
+      <link>http://threechilix.xyz/blog/memasang-komentar-disqus-pada-hugo/</link>
+      <pubDate>Sat, 16 Sep 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/memasang-komentar-disqus-pada-hugo/</guid>
+      <description>Sebagai web statis, blog berbasis Hugo di Github Pages tidak memiliki sistem komentar sendiri. Untuk itu dibutuhkan sistem komentar pihak ketiga seperti Disqus, Facebook, dan lainnya, selain itu beberapa pengunjung mungkin ingin meninggalkan komentar dipostingngan Anda.
+Meskipun Hugo menyediakan template internal untuk Disqus, namun saat Anda menguji situs Anda secara lokal host maka komentar Disqus Anda tidak akan tampil.
+Untuk menerapkan template internal_Disqus Anda cukup menerapkan code dibawa ini:
+{{ template &amp;quot;_internal/disqus.</description>
+    </item><item>
+      <title>Install Hugo Di Windows</title>
+      <link>http://threechilix.xyz/blog/install-hugo-di-windows/</link>
+      <pubDate>Tue, 29 Aug 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/install-hugo-di-windows/</guid>
+      <description>Hugo adalah static generator tercepat di dunia yang mempu membuat ribuan postingan hanya dengan hitungan detik. Install Hugo Di Windows Cara install hugo itu mudah dan tidak membutuhkan software pihak ke-3 lainnya seperti (Node.js). Anda hanya perlu memasangnya dengan cara mendownload hugo versi terbaru disini lalu ekstraks hasil download pada folder C:\Hugo\bin dan rubah nama menjadi hugo.exe jika bawaannya sudah hugo.exe maka tidak perlu ada perubahan lagi.
+Setelah proses ekstraksi selesai, selanjutnya Anda perlu mengatur Envirnoment Variables dan menambahkan ;C:\Hugo\bin caranya</description>
+    </item><item>
+      <title>Apa Itu Hugo?</title>
+      <link>http://threechilix.xyz/blog/apa-itu-hugo/</link>
+      <pubDate>Mon, 28 Aug 2017 08:00:00 +0000</pubDate>
+      <author>threechilix@gmail.com (Threechilix)</author>
+      <guid>http://threechilix.xyz/blog/apa-itu-hugo/</guid>
+      <description>Hugo adalah sebuah framework situs web. Secara teknis, Hugo adalah generator situs statis. Tidak seperti cms lain yang di program untuk menjalankan situs secara dinamis, Hugo dioptimalkan untuk membuat situs web yang memberikan pengalaman menulis yang hebat.
+Itulah pengertian hugo yang saya kutip dari situs web resmi-nya, Jadi intinya hugo merupakan sebuah CMS sama seperti wordpress akan tetapi hugo sedikit berbeda di hugo tidak memerlukan database karena postingan atau konten yang dibuat berbentuk file markdown dan yang lebih istimewa nya lagi hugo bisa memakai layanan gratis dari Github Pages, Gitlab dan Bitbucket</description>
+    </item>
+  </channel>
+</rss>

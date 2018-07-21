@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ThreeChilix</title>
+    <link>http://threechilix.xyz/categories/</link>
+    <description>Recent content in Categories on ThreeChilix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+    <managingEditor>threechilix@gmail.com(Threechilix)</managingEditor>
+    <webMaster>threechilix@gmail.com (Threechilix)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    
+    <atom:link href="http://threechilix.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+  </channel>
+</rss>
