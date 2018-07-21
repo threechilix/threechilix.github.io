@@ -20,7 +20,7 @@
       <description>Walaupun Hugo sudah menyediakan themes untuk Anda gunakan tapi tidak ada salahnya kita belejar membuat tema dari nol.
 Untuk membuat tema dari nol kita dapat mengunakan perintah
 hugo new theme [name]  sebagai contoh Saya membuat tema dengan nama tes
-hugo new theme tes  Maka akan ada direktori baru di dalam direktori themes dengan nama folder tes Hugo sudah membuatkankan kita struktur direktori temanya dan tinggal dimodifikasi saja.</description>
+hugo new theme tes  Maka akan ada direktori baru di dalam direktori themes dengan nama folder tes   Hugo sudah membuatkankan kita struktur direktori temanya dan tinggal dimodifikasi saja.</description>
     </item>
   </channel>
 </rss>

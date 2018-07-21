@@ -27,7 +27,7 @@
       <description>Walaupun Hugo sudah menyediakan themes untuk Anda gunakan tapi tidak ada salahnya kita belejar membuat tema dari nol.
 Untuk membuat tema dari nol kita dapat mengunakan perintah
 hugo new theme [name]  sebagai contoh Saya membuat tema dengan nama tes
-hugo new theme tes  Maka akan ada direktori baru di dalam direktori themes dengan nama folder tes Hugo sudah membuatkankan kita struktur direktori temanya dan tinggal dimodifikasi saja.</description>
+hugo new theme tes  Maka akan ada direktori baru di dalam direktori themes dengan nama folder tes   Hugo sudah membuatkankan kita struktur direktori temanya dan tinggal dimodifikasi saja.</description>
     </item><item>
       <title>Memasang Komentar Disqus pada Hugo</title>
       <link>http://threechilix.xyz/blog/memasang-komentar-disqus-pada-hugo/</link>
@@ -45,7 +45,7 @@ Untuk menerapkan template internal_Disqus Anda cukup menerapkan code dibawa ini:
       <author>threechilix@gmail.com (Threechilix)</author>
       <guid>http://threechilix.xyz/blog/install-hugo-di-windows/</guid>
       <description>Hugo adalah static generator tercepat di dunia yang mempu membuat ribuan postingan hanya dengan hitungan detik. Install Hugo Di Windows Cara install hugo itu mudah dan tidak membutuhkan software pihak ke-3 lainnya seperti (Node.js). Anda hanya perlu memasangnya dengan cara mendownload hugo versi terbaru disini lalu ekstraks hasil download pada folder C:\Hugo\bin dan rubah nama menjadi hugo.exe jika bawaannya sudah hugo.exe maka tidak perlu ada perubahan lagi.
-Setelah proses ekstraksi selesai, selanjutnya Anda perlu mengatur Envirnoment Variables dan menambahkan ;C:\Hugo\bin caranya</description>
+  Setelah proses ekstraksi selesai, selanjutnya Anda perlu mengatur Envirnoment Variables dan menambahkan ;C:\Hugo\bin caranya</description>
     </item><item>
       <title>Apa Itu Hugo?</title>
       <link>http://threechilix.xyz/blog/apa-itu-hugo/</link>
