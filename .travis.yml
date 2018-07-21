@@ -15,7 +15,7 @@ install:
 
 script:
     - hugo
-    - echo 'axdlog.com' > public/CNAME
+    - echo 'threechilix.xyz' > public/CNAME
 
 deploy:
   provider: pages
