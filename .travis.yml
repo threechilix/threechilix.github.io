@@ -1,16 +1,27 @@
+# https://docs.travis-ci.com/user/deployment/pages/
+# https://docs.travis-ci.com/user/languages/python/
+# https://docs.travis-ci.com/user/customizing-the-build/
+
 language: python
+
 python:
-  - '3.6'
+    - "3.6"
+
 before_install:
   - sudo apt-get -qq update
+
+# install - install any dependencies required
 install:
-  - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}' | xargs wget
-  - sudo dpkg -i hugo*.deb
-  - pip install Pygments
-  - rm -rf public 2> /dev/null
+    # install latest release version
+    - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}' | xargs wget
+    - sudo dpkg -i hugo*.deb
+    - rm -rf public 2> /dev/null
+
+# script - run the build script
 script:
   - hugo
   - echo 'threechilix.xyz' > public/CNAME
+
 deploy:
   provider: pages
   skip-cleanup: true
@@ -23,6 +34,7 @@ deploy:
   target_branch: master
   on:
     branch: code
+    
 notifications:
   slack:
     rooms:
