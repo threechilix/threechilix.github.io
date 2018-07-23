@@ -28,7 +28,7 @@ deploy:
 notifications:
   slack:
     rooms:
-      secure:
+      - secure: qBufrgaGWxEBhUVSezQ1Pu2/0+QBEQllY9rTbVvRbxqPvRowD2fDQsPFTr5Dn+Y1AwXA/LUvWeCoWV5xM8nw/x3TXLzRHcXvb3fNs2IzfZ/FuZnT9wSMvuuowoorj4oEMNsDCpp+jsIF7AAsx026Ws+P7C60ZcL71zq3giZDem162a14UIxNiIeXHk7tkY1wIEx8Rb5/S+FOrOEdDu36YVotj+MAnpW/P8IY4E2lxhK81hXLIG97FkFjHHNmDb4QSorO/JgNwf90f366A1ClJoRa+pcYoOmfakQZfzg64tKFO3K1tFMQ4qkYeegWz3JieajSRX3Cc43icQ+swBNUmllwlI3YRF48Sh3cphzOOAJ2x3wvBCYp9qIZpGHorOk13VDNaqQweWskrDLWpoFUHGOGzlvT8ZL5ZA3M8Nd6J68ulI7GhsQt/VEGckxphKIGjSAVhCdyORQ10ljkM1yOQPlNIwajJ9QCBCHR+M0tndL3/tfmUJQqZInky58RQ0cg+2GY4BoN0KFc5obFH7P4wrcYBMxBH7sUa+FhRNw6+F73wU8djs4wNRqDkHS4LGLaW8ShBG8VC1MpvlL+OhD55NMaQAVX9pwlK0+yk1ZxTLVg2FCEM/2jy8KG8XU7+2Sw6HAjd+anBso7pFfkNAxQftofYWO5HXSKklR9nH998dw=
     on_success: always  # change: send a notification when the build status changes.
     on_failure: always  # always: always send a notification.
     template:
