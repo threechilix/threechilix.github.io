@@ -1,18 +1,18 @@
 language: python
 python:
-- '3.6'
+  - '3.6'
 before_install:
-- sudo apt-get -qq update
+  - sudo apt-get -qq update
 install:
-- wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n
+  - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n
   '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}'
   | xargs wget
-- sudo dpkg -i hugo*.deb
-- pip install Pygments
-- rm -rf public 2> /dev/null
+  - sudo dpkg -i hugo*.deb
+  - pip install Pygments
+  - rm -rf public 2> /dev/null
 script:
-- hugo
-- echo 'threechilix.xyz' > public/CNAME
+  - hugo
+  - echo 'threechilix.xyz' > public/CNAME
 deploy:
   provider: pages
   skip-cleanup: true
